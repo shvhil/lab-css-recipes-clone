@@ -1,9 +1,109 @@
-/*Some necessary adjustments*/
-h1, body, html, main {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: PP Editorial New;
+  scrollbar-width: none;
 }
-/*Import the font and set the default size*/
-html {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px
+
+#hero-section {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-section img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+  z-index: -2;
+}
+
+#hero-section h1 {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 6rem;
+  font-weight: bolder;
+}
+
+#intro-section {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+#intro-section p {
+  padding: 10rem 15rem 5rem 15rem;
+  text-align: justify;
+  font-size: 3rem;
+}
+
+#intro-info {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 2rem 15rem 3rem 15rem;
+  gap: 5rem;
+}
+
+#intro-info p {
+  color: #666666;
+  font-size: 1.8rem;
+}
+
+hr {
+  width: 88rem;
+  margin: 0 auto;
+  border: 1px solid #bbbbbb;
+}
+
+#ingredients-section,
+#directions-section {
+  padding: 3rem 8rem 5rem 8rem;
+}
+
+#ingredients-section h3,
+#directions-section h3 {
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+#ingredients-section ul {
+  padding: 2rem 3rem;
+  list-style: circle;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+#ingredients-info {
+  padding: 2rem 15rem 3rem 15rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.info-items p {
+  color: #999999;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.vertical-divider {
+  color: #bbbbbb;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+#directions-section ol {
+  font-size: 2rem;
+  font-weight: 100;
+  padding: 2rem 3rem;
+  text-align: justify;
 }
